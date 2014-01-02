@@ -12,7 +12,7 @@ use Regexp::Common qw(URI);
 
 use OTRS::Repository::Source;
 
-our $VERSION = 0.01;
+our $VERSION = 0.02;
 
 our $ALLOWED_SCHEME = 'HTTP';
 
@@ -58,6 +58,18 @@ sub BUILDARGS {
 
 1;
 
+__END__
+
+=pod
+
+=head1 NAME
+
+OTRS::Repository - parse OTRS repositories' otrs.xml files to search for add ons
+
+=head1 VERSION
+
+version 0.02
+
 =head1 SYNOPSIS
 
   use OTRS::Repository;
@@ -102,3 +114,24 @@ returns a list of urls if the add on was found, C<undef> otherwise.
     otrs => '3.3',
   );
 
+Find a specific version
+
+  my @urls = $repo->find(
+    name    => 'ITSMCore',
+    otrs    => '3.3',
+    version => '1.4.8',
+  );
+
+=head1 AUTHOR
+
+Renee Baecker <github@renee-baecker.de>
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is Copyright (c) 2013 by Renee Baecker.
+
+This is free software, licensed under:
+
+  The Artistic License 2.0 (GPL Compatible)
+
+=cut
