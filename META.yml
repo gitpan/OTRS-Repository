@@ -13,11 +13,16 @@ meta-spec:
   version: 1.4
 name: OTRS-Repository
 requires:
-  HTTP::Tiny: 0
-  List::Util: 0
-  Moo: 0
-  Regexp::Common: 0
-  Scalar::Util: 0
-  Test::More: 0
-  XML::LibXML: 0
-version: 0.02
+  HTTP::Tiny: 0.036
+  List::Util: 1.33
+  Moo: 1.003001
+  Regexp::Common: 2013031301
+  Scalar::Util: 1.33
+  Test::More: 0.99
+  XML::LibXML: 2.0106
+  perl: 5.008009
+resources:
+  bugtracker: http://github.com/reneeb/OTRS-Repository/issues
+  homepage: http://github.com/reneeb/OTRS-Repository
+  repository: http://github.com/reneeb/OTRS-Repository.git
+version: 0.03

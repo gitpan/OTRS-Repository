@@ -12,7 +12,7 @@ use Regexp::Common qw(URI);
 
 use OTRS::Repository::Source;
 
-our $VERSION = 0.02;
+our $VERSION = 0.03;
 
 our $ALLOWED_SCHEME = 'HTTP';
 
@@ -42,6 +42,18 @@ sub find {
     return @found;
 }
 
+sub list {
+    my ($self, %params) = @_;
+
+    my %found_packages;
+    for my $source ( @{ $self->_objects || [] } ) {
+        my @found = $source->list( %params );
+        @found_packages{@found} = (1) x @found;
+    }
+
+    return sort keys %found_packages;
+}
+
 sub BUILDARGS {
     my ($class, @args) = @_;
 
@@ -68,7 +80,7 @@ OTRS::Repository - parse OTRS repositories' otrs.xml files to search for add ons
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 SYNOPSIS
 

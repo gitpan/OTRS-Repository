@@ -10,4 +10,6 @@ lib/OTRS/Repository/Source.pm
 t/data/otrs.xml
 t/repository.t
 t/repository_dup.t
+t/repository_list.t
 t/source.t
+t/source_list.t

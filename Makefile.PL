@@ -2,7 +2,7 @@
 use strict;
 use warnings;
 
-
+use 5.008009;
 
 use ExtUtils::MakeMaker 6.30;
 
@@ -20,16 +20,16 @@ my %WriteMakefileArgs = (
   "LICENSE" => "artistic_2",
   "NAME" => "OTRS::Repository",
   "PREREQ_PM" => {
-    "HTTP::Tiny" => 0,
-    "List::Util" => 0,
-    "Moo" => 0,
-    "Regexp::Common" => 0,
-    "Scalar::Util" => 0,
-    "Test::More" => 0,
-    "XML::LibXML" => 0
+    "HTTP::Tiny" => "0.036",
+    "List::Util" => "1.33",
+    "Moo" => "1.003001",
+    "Regexp::Common" => "2013031301",
+    "Scalar::Util" => "1.33",
+    "Test::More" => "0.99",
+    "XML::LibXML" => "2.0106"
   },
   "TEST_REQUIRES" => {},
-  "VERSION" => "0.02",
+  "VERSION" => "0.03",
   "test" => {
     "TESTS" => "t/*.t"
   }
