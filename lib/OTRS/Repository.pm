@@ -12,7 +12,7 @@ use Regexp::Common qw(URI);
 
 use OTRS::Repository::Source;
 
-our $VERSION = 0.04;
+our $VERSION = 0.05;
 
 our $ALLOWED_SCHEME = 'HTTP';
 
@@ -80,7 +80,7 @@ OTRS::Repository - parse OTRS repositories' otrs.xml files to search for add ons
 
 =head1 VERSION
 
-version 0.04
+version 0.05
 
 =head1 SYNOPSIS
 

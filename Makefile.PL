@@ -29,7 +29,7 @@ my %WriteMakefileArgs = (
     "XML::LibXML" => "2.0106"
   },
   "TEST_REQUIRES" => {},
-  "VERSION" => "0.04",
+  "VERSION" => "0.05",
   "test" => {
     "TESTS" => "t/*.t"
   }

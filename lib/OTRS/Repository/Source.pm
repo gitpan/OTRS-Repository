@@ -10,7 +10,7 @@ use HTTP::Tiny;
 use XML::LibXML;
 use Regexp::Common qw(URI);
 
-our $VERSION = 0.04;
+our $VERSION = 0.05;
 
 our $ALLOWED_SCHEME = 'HTTP';
 
@@ -176,7 +176,7 @@ OTRS::Repository::Source - Parser for a single otrs.xml file
 
 =head1 VERSION
 
-version 0.04
+version 0.05
 
 =head1 AUTHOR
 

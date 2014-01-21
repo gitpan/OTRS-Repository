@@ -25,4 +25,4 @@ resources:
   bugtracker: http://github.com/reneeb/OTRS-Repository/issues
   homepage: http://github.com/reneeb/OTRS-Repository
   repository: http://github.com/reneeb/OTRS-Repository.git
-version: 0.04
+version: 0.05
